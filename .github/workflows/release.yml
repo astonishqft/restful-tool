@@ -45,9 +45,12 @@ jobs:
         if: matrix.os == 'macos-latest'
         run: pnpm run build:mac
 
+      - name: List dist directory (Windows)
+        if: matrix.os == 'windows-latest'
+        run: Get-ChildItem -Force dist
 
-
-      - name: List dist directory
+      - name: List dist directory (macOS)
+        if: matrix.os == 'macos-latest'
         run: ls -la dist
 
       - name: Release Windows asset
