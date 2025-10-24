@@ -1,0 +1,62 @@
+{
+  "name": "用户管理示例接口",
+  "description": "真实可用的用户管理模拟接口集，覆盖 GET/POST/PUT/DELETE。",
+  "apis": [
+    {
+      "name": "获取用户列表 (page=2)",
+      "url": "https://reqres.in/api/users?page=2",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      }
+    },
+    {
+      "name": "获取单个用户 (id=2)",
+      "url": "https://reqres.in/api/users/2",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      }
+    },
+    {
+      "name": "创建用户",
+      "url": "https://reqres.in/api/users",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "morpheus",
+        "job": "leader"
+      }
+    },
+    {
+      "name": "更新用户 (PUT)",
+      "url": "https://reqres.in/api/users/2",
+      "method": "PUT",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "morpheus",
+        "job": "zion resident"
+      }
+    },
+    {
+      "name": "删除用户",
+      "url": "https://reqres.in/api/users/2",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "application/json"
+      }
+    },
+    {
+      "name": "延时获取用户列表 (delay=1)",
+      "url": "https://reqres.in/api/users?delay=1",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      }
+    }
+  ]
+}

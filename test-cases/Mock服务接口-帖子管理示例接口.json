@@ -1,0 +1,71 @@
+{
+  "name": "帖子管理示例接口",
+  "description": "通用资源的模拟接口，覆盖 Posts 常用操作。",
+  "apis": [
+    {
+      "name": "获取所有帖子",
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "expectedExpression": "($.status === 200) && Array.isArray($.data) && $.data.length > 0"
+    },
+    {
+      "name": "获取指定帖子 (id=1)",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "expectedExpression": "($.status === 200) && $.data.id === 1"
+    },
+    {
+      "name": "创建帖子",
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+      },
+      "expectedExpression": "($.status === 201) && $.data.id === 101"
+    },
+    {
+      "name": "更新帖子 (PUT)",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "method": "PUT",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "id": 1,
+        "title": "updated title",
+        "body": "updated body",
+        "userId": 1
+      },
+      "expectedExpression": "($.status === 200) && $.data.id === 1"
+    },
+    {
+      "name": "删除帖子",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "method": "DELETE",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "expectedExpression": "$.status === 200"
+    },
+    {
+      "name": "获取评论 (postId=1)",
+      "url": "https://jsonplaceholder.typicode.com/comments?postId=1",
+      "method": "GET",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "expectedExpression": "($.status === 200) && Array.isArray($.data) && $.data.length > 0"
+    }
+  ]
+}
