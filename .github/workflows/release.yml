@@ -15,7 +15,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, windows-latest]
+        include:
+          - os: macos-13
+            arch: x64
+          - os: macos-14
+            arch: arm64
+          - os: windows-latest
+            arch: x64
 
     steps:
       - name: Checkout
@@ -42,15 +48,15 @@ jobs:
         run: pnpm run build:win
 
       - name: Build macOS
-        if: matrix.os == 'macos-latest'
-        run: pnpm run build:mac
+        if: startsWith(matrix.os, 'macos')
+        run: pnpm run build && pnpm exec electron-builder --mac --${{ matrix.arch }}
 
       - name: List dist directory (Windows)
         if: matrix.os == 'windows-latest'
         run: Get-ChildItem -Force dist
 
       - name: List dist directory (macOS)
-        if: matrix.os == 'macos-latest'
+        if: startsWith(matrix.os, 'macos')
         run: ls -la dist
 
       - name: Release Windows asset
@@ -63,10 +69,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release macOS assets
-        if: matrix.os == 'macos-latest'
+        if: startsWith(matrix.os, 'macos')
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/restful-api-test-*.dmg
+            dist/restful-api-test-*-${{ matrix.arch }}.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
