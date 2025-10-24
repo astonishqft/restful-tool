@@ -63,6 +63,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/**
+            dist/restful-api-test-${{ env.VERSION }}.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
