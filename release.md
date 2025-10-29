@@ -24,7 +24,10 @@ pnpm release:major
 ## 程序下载地址：
 
 - Windows 安装程序：
-  https://github.com/astonishqft/restful-tool/releases/download/v1.0.7/restful-api-test-1.0.7.setup.exe
+  https://github.com/astonishqft/restful-tool/releases/download/v1.0.9/restful-api-test-1.0.9-setup.exe
 
-- macOS 应用程序：
-  https://github.com/astonishqft/restful-tool/releases/download/v1.0.7/restful-api-test-1.0.7.dmg
+- macOS 应用程序（arm架构）：
+  https://github.com/astonishqft/restful-tool/releases/download/v1.0.9/restful-api-test-1.0.9-arm64.dmg
+
+- macOS 应用程序（x86架构）：
+  https://github.com/astonishqft/restful-tool/releases/download/v1.0.9/restful-api-test-1.0.9-x64.dmg

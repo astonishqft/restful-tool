@@ -4,6 +4,7 @@
   "description": "Restful API接口测试工具",
   "main": "./out/main/index.js",
   "author": "futao.qi",
+  "license": "MIT",
   "homepage": "https://github.com/astonishqft/restful-tool",
   "scripts": {
     "format": "prettier --write .",

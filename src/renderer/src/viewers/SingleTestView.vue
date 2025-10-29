@@ -156,7 +156,7 @@
               v-model="editingValue"
               type="textarea"
               :rows="4"
-              placeholder="status === 200 && data.success === true"
+              placeholder="$.status === 200"
             />
           </template>
           <template v-else>
