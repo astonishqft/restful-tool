@@ -34,7 +34,7 @@
 
 *   右侧：单接口测试视图 + 批量测试视图，按需切换，操作聚焦。
 
-![整体布局.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/b543534c20ad42b2a8a9943bf2b95520~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=FjeMG7p%2Bookbi7vrDFKMJncmxJk%3D)
+![整体布局.png](./images/整体布局.png)
 
 ## 核心功能实操：测试用例全流程管理
 
@@ -54,7 +54,7 @@
 
 *   apis：接口数组，每个接口包含name（接口名）、url（接口地址）、method（请求方法）等必填项，还有headers、params、body、expectedExpression（断言表达式）等可选字段。
 
-![导入测试用例.gif](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d47c959a0a794278ac73928bc55c5d1b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=xyTwYYjWViF01uUzogN5WmbW46k%3D)
+![导入测试用例.gif](./images/导入测试用例.gif)
 
 给大家放一个完整的测试用例示例，直接复制修改就能用：
 
@@ -89,10 +89,10 @@
 
 删除测试用例：
 
-![删除测试用例.gif](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/759645e8c68f4d39827a362b96039ec2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=LqKrar6iRa%2FYXu5UoHl2X4a8594%3D)
+![删除测试用例.gif](./images/删除测试用例.gif)
 编辑测试用例：
 
-![编辑测试用例.gif](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/cf9d07cb0ff3468a9c000774c28a1561~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=ya43gLVO%2BL%2FTuqe5D%2Fj9K%2Bse5HI%3D)
+![编辑测试用例.gif](./images/编辑测试用例.gif)
 
 ### 3. 批量执行：一次跑多个用例，结果秒出
 
@@ -106,19 +106,19 @@
 
 执行完成后，会清晰展示每个用例的测试结果，通过率一目了然，省去了逐个执行的麻烦。
 
-![批量执行测试用例.gif](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/8bb13fc1289343bab7a9eda0fb6f1df7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=nV8uaHF0jf2MH8pNTC295Ucajq0%3D)
+![批量执行测试用例.gif](./images/批量执行测试用例.gif)
 
 ### 4. 导出用例：版本管理 + 分享更方便
 
 编辑后的测试用例，点击左侧列表的「导出测试用例」按钮，就能导出成 JSON 文件。这样一来，不仅方便做版本控制（比如用 Git 管理用例版本），还能轻松分享给团队成员，协作更高效。
 
-![导出测试用例.gif](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/bab26798a1634559b39e7a6cf0822c86~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=ZN04J12vhIAiy0sjB4kut3OsaWo%3D)
+![导出测试用例.gif](./images/导出测试用例.gif)
 
 ## 单接口测试：细节拉满，满足复杂需求
 
 一个测试用例通常包含多个接口，选中左侧列表中的具体接口，就能进入单接口测试视图。这个视图由 4 部分组成：顶部操作栏、请求详情、请求头、请求参数 / 请求体，每个部分都考虑到了实际测试场景的需求。
 
-![接口测试用例的管理.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/18fe57046a2a4d3cb6c1396d027701d3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgQmVzdEFucw==:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTU1NjU2NDE5NzI0ODYwNSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1762525129&x-orig-sign=r%2BvYew4OBgZoHbLdGjBg1TEoTJo%3D)
+![接口测试用例的管理.png](./images/接口测试用例的管理.png)
 
 ### 重点：预期断言表达式，精准校验结果
 
